@@ -2,7 +2,7 @@
 #include <vector>
 #include <utility> // for swap
 // libpqxx
-// #include <pqxx/pqxx>
+#include <pqxx/pqxx>
 
 using std::vector;
 using std::cout;
