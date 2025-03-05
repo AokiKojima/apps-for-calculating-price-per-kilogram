@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y build-essential cmake git libpq-dev pkg
 WORKDIR /app
 
 COPY . .
+COPY ./ .
 COPY /build .
 
 WORKDIR /app/build
