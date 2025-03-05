@@ -5,13 +5,15 @@ RUN apt-get update && apt-get install -y build-essential cmake git libpq-dev pkg
 WORKDIR /app
 
 COPY . .
-COPY ./ .
-COPY /build .
 
-WORKDIR /app/build
+WORKDIR /app/Money
+
+COPY ./Money .
+
+WORKDIR /app
 
 RUN rm -f CMakeCache.txt
 
-RUN cmake .. && make
+RUN cmake . && make
 
-CMD ["./Money"]
+CMD ["./money"]

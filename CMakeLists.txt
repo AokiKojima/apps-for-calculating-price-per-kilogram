@@ -18,5 +18,5 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(libpqxx)
 
-add_executable(Money main.cpp Money/money.cpp)
-target_link_libraries(Money pqxx)
+add_executable(money main.cpp Money/money.cpp)
+target_link_libraries(money pqxx)
